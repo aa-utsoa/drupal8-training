@@ -1,0 +1,13 @@
+# Override the Apache User (vhosts are included at the end of apache2.conf)
+User vagrant
+Group vagrant
+
+
+
+<VirtualHost *:80>
+  Servername <%= node[':hostname'] %>
+  DocumentRoot /home/vagrant/public_html
+  CustomLog /var/log/apache2/<%= node[':hostname'] %>.access.log common
+  ErrorLog /var/log/apache2/<%= node[':hostname'] %>.error.log
+  php_value error_log /var/log/apache2/<%= node[':hostname'] %>.php.error.log
+</VirtualHost>
