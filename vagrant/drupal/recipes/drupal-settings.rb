@@ -12,7 +12,7 @@ template "/home/vagrant/public_html/drupal8-training/sites/default/settings.php"
 end
 
 %w[ files files/config_vagrant files/config_vagrant/active files/config_vagrant/staging].each do |dir|
-  directory "/home/vagrant/public_html/sites/default/#{dir}" do
+  directory "/home/vagrant/public_html/drupal8-training/sites/default/#{dir}" do
     mode 00755
   end
 end
