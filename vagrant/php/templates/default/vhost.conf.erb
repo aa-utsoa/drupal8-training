@@ -2,11 +2,19 @@
 User vagrant
 Group vagrant
 
-
+Listen 8080
 
 <VirtualHost *:80>
   Servername <%= node[':hostname'] %>
   DocumentRoot /home/vagrant/public_html
+  CustomLog /var/log/apache2/<%= node[':hostname'] %>.access.log common
+  ErrorLog /var/log/apache2/<%= node[':hostname'] %>.error.log
+  php_value error_log /var/log/apache2/<%= node[':hostname'] %>.php.error.log
+</VirtualHost>
+
+<VirtualHost *:8080>
+  Servername <%= node[':hostname'] %>
+  DocumentRoot /home/vagrant/public_html/drupal8-training
   CustomLog /var/log/apache2/<%= node[':hostname'] %>.access.log common
   ErrorLog /var/log/apache2/<%= node[':hostname'] %>.error.log
   php_value error_log /var/log/apache2/<%= node[':hostname'] %>.php.error.log

@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "http://transfer.amazeelabs.com/vagrant/precise64.box"
   config.vm.hostname = HOSTNAME
   config.hostsupdater.aliases = ["xhprof." + HOSTNAME]
-  config.vm.network :private_network, :ip => '192.168.111.42', :auto_network => true
+  config.vm.network :private_network, :ip => '192.168.111.42'
   config.ssh.forward_agent = true
   config.vm.synced_folder ".", "/home/vagrant/public_html" , :nfs => true
 
@@ -18,7 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = "vagrant/vagrant"
+    chef.cookbooks_path = "vagrant"
     chef.log_level = ENV['CHEF_LOG'] || "info"
 
     chef.json = {
