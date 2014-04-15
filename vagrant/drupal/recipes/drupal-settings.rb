@@ -1,4 +1,4 @@
-template "/home/vagrant/public_html/sites/default/settings.php" do
+template "/home/vagrant/public_html/drupal8-training/sites/default/settings.php" do
   source "settings.php.erb"
   variables({
      :database => 'drupal',
