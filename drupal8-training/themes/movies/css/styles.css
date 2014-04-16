@@ -1,0 +1,43 @@
+/* line 11, ../../../../../../.rvm/gems/ruby-2.0.0-p247@amazeelabs/gems/susy-2.1.1/sass/susy/language/susy/_box-sizing.scss */
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 22, ../sass/layout/_grid.scss */
+#site-header,
+#site-main,
+#site-footer {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 12, ../../../../../../.rvm/gems/ruby-2.0.0-p247@amazeelabs/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
+  #site-header::after,
+  #site-main::after,
+  #site-footer::after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+/* line 28, ../sass/layout/_grid.scss */
+#site-main {
+  background-color: #fff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.13); }
+
+/* line 2, ../sass/base/_backgrounds.scss */
+body {
+  background: #f1f1f1 url(../images/site-bg.jpg); }
+
+/* line 4, ../sass/base/_typography.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 7, ../sass/base/_typography.scss */
+body {
+  font-size: 16px;
+  font-size: 1.6rem; }

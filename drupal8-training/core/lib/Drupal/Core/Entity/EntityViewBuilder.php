@@ -148,6 +148,7 @@ class EntityViewBuilder extends EntityControllerBase implements EntityController
         'tags' =>  NestedArray::mergeDeep($this->getCacheTag(), $entity->getCacheTag()),
       ),
     );
+    return $return;
 
     // Cache the rendered output if permitted by the view mode and global entity
     // type configuration.
