@@ -19,16 +19,14 @@ $susy: (
 
 // Apply our default grid ($susy) to the site
 // =============================================================================
-.l-container {
-  @include container(1120px show-columns);
+#site-header,
+#site-main,
+#site-footer {
+  @include container(1120px);
 }
 
-.l-container {
+#site-main {
   background-color: #fff;
   @include border-radius(10px);
   @include box-shadow(0 0 5px rgba(0,0,0,.13));
-  margin: 60px auto 170px;
-}
-header {
-  @include full();
 }
