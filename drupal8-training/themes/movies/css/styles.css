@@ -21,7 +21,7 @@
 
 /* line 31, ../sass/layout/_grid.scss */
 #page-wrapper {
-  padding: 0 20px;
+  padding: 60px 20px 0;
   max-width: 1160px;
   margin: 0 auto; }
 
@@ -40,7 +40,7 @@
 /* line 2, ../sass/base/_backgrounds.scss */
 body {
   background: #f1f1f1 url(../images/site-bg.jpg);
-  padding: 60px 0 170px; }
+  padding: 0 0 170px; }
 
 /* line 2, ../sass/base/_forms.scss */
 .green-button {
