@@ -25,6 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     }
 
     chef.add_recipe("common")
+    chef.add_recipe("common::motd")
     chef.add_recipe("php::php54")
     chef.add_recipe("php::php-additions")
     chef.add_recipe("composer")
