@@ -22,7 +22,7 @@ $susy: (
 #site-header,
 #site-main,
 #site-footer {
-  @include container(show-columns);
+  @include container();
 }
 
 // Never let the edges of the content touch the edges of the browser window
@@ -39,4 +39,5 @@ $susy: (
   @include border-radius(10px);
   @include box-shadow(0 0 5px rgba(0,0,0,.13));
   margin-top: 55px;
+  padding: 44px 0;
 }

@@ -7,7 +7,7 @@
   * */
   Drupal.behaviors.konamiCode = {
     attach: function (context, settings) {
-      var secret = "6577659069327769";
+      var secret = "6577659069327769"; // Amaze me
       // var secret = "657765906969"; // Amazee
       // var secret = "38384040373937396665"// Konami code
       var input = "";

@@ -5,16 +5,60 @@
   float: left;
   width: 100%;
 }
-.bright {
-  background: url(../images/star-bright.png);
+.star {
   float: left;
   height: 19px;
   width: 20px;
-  margin: 0 2px 0 0;
+  margin: 0 2px 16px 0;
 }
-
+.bright {
+  background: url(../images/star-bright.png);
+}
+.dark {
+  background: url(../images/star-dark.png);
+}
 .view-mode-teaser.node-movie-review {
   background-color: $beige;
-  @include span(8);
-  border: 1px solid black;
+  margin: 0 0 30px;
+  position: relative;
+  .image {
+    float: left;
+    @include transition(all 0.4s ease-in-out);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    img {
+      display: block;
+    }
+    &:hover {
+        @include opacity(0.85);
+      }
+  }
+  .content {
+    bottom: 0;
+    left: 180px;
+    padding: 0 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  h2 {
+    text-transform: uppercase;
+    margin: 26px 0 10px;
+  }
+  .bottom {
+    bottom: 24px;
+    left: 0;
+    padding: 0 30px;
+    position: absolute;
+    width: 100%;
+  }
+  .green-button {
+    float: right;
+  }
+}
+
+.l-content {
+  @include span(last 8 of 14);
+  @include post(1);
+  // border: 1px solid black;
 }
