@@ -14,7 +14,7 @@ end
 
 ssh_known_hosts_entry 'github.com'
 git "/opt/xhprof" do
-    repository "git@github.com:gajus/xhprof.io.git"
+    repository "https://github.com/gajus/xhprof.io.git"
     revision "master"
     user "vagrant"
     action :sync
