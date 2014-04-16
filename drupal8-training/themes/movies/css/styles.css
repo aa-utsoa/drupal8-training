@@ -72,18 +72,22 @@ body {
 /* line 15, ../sass/base/_typography.scss */
 a:link,
 a:visited {
+  text-decoration: none; }
+
+/* line 20, ../sass/base/_typography.scss */
+.l-content a:link,
+.l-content a:visited {
   color: #3ab681;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none; }
-  /* line 20, ../sass/base/_typography.scss */
-  a:link:hover,
-  a:visited:hover {
+  transition: all 0.2s ease-in-out; }
+  /* line 24, ../sass/base/_typography.scss */
+  .l-content a:link:hover,
+  .l-content a:visited:hover {
     color: #2bcd92; }
 
-/* line 26, ../sass/base/_typography.scss */
+/* line 31, ../sass/base/_typography.scss */
 .l-content h1 {
   margin-top: 0; }
 
