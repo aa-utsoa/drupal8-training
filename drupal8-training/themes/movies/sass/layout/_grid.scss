@@ -1,0 +1,36 @@
+
+// IMPORT EXTERNAL DEPENDENCIES
+// =============================================================================
+@import "susy";
+@import "breakpoint";
+
+// Susy One Basic Settings
+// =============================================================================
+
+// // A fluid grid based on 960gs
+// $total-columns: 14;
+// $column-width: 60px;
+// $gutter-width: 20px;
+// $grid-padding: 10px;
+
+// // Make it fluid!
+// $container-style: fluid;
+
+// .l-container {
+//   @include container;
+//   @include susy-grid-background;
+// }
+
+// Susy Two Basic Settings
+// =============================================================================
+$susy: (
+  columns: 14,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+.l-container {
+  @include container(12);
+}
