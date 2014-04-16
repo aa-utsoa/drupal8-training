@@ -10,12 +10,13 @@
   height: 19px;
   width: 20px;
   margin: 0 2px 16px 0;
+  background-size: 100% 19px;
 }
 .bright {
-  background: url(../images/star-bright.png);
+  background-image: url(../images/star-bright-retina.png);
 }
 .dark {
-  background: url(../images/star-dark.png);
+  background-image: url(../images/star-dark-retina.png);
 }
 .view-mode-teaser.node-movie-review {
   background-color: $beige;
