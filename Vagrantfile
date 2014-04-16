@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "http://transfer.amazeelabs.com/vagrant/precise64.box"
   config.vm.hostname = HOSTNAME
   config.vm.network :private_network, :ip => '192.168.111.42'
-  config.ssh.forward_agent = true
+  # config.ssh.forward_agent = true
   config.vm.synced_folder ".", "/home/vagrant/public_html" , :nfs => true
 
   config.vm.provider :virtualbox do |vm|
@@ -27,11 +27,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe("common")
     chef.add_recipe("php::php54")
     chef.add_recipe("php::php-additions")
-    chef.add_recipe("xhprof")
+    #chef.add_recipe("xhprof")
     chef.add_recipe("composer")
     chef.add_recipe("drush")
     chef.add_recipe("drush::deploy")
     chef.add_recipe("drupal::drupal-settings")
     chef.add_recipe("drupal::mysql-database")
+    chef.add_recipe("drupal::mysql-import")
   end
 end
