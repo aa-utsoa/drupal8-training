@@ -71,4 +71,3 @@ if ($customer_configuration == true) {
 $aliases['live'] = array(
   'site-list' => array_map(function($k){ return '@'.$k;},array_keys($amazeelabs_configuration['live']))
 );
-
