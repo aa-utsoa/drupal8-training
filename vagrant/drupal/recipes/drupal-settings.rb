@@ -11,8 +11,18 @@ template "/home/vagrant/public_html/drupal8-training/sites/default/settings.php"
   action :create_if_missing
 end
 
-%w[ files files/config_vagrant files/config_vagrant/active files/config_vagrant/staging].each do |dir|
+directory "/home/vagrant/public_html/drupal8-training/sites/default/" do
+  mode "0755"
+end
+
+
+%w[ files files/config_vagrant files/config_vagrant/staging].each do |dir|
   directory "/home/vagrant/public_html/drupal8-training/sites/default/#{dir}" do
     mode 00755
   end
+end
+
+directory "/home/vagrant/public_html/drupal8-training/sites/default/files/php" do
+  action :delete
+  recursive true
 end
