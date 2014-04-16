@@ -2,7 +2,6 @@
 // Import External Variables
 // =============================================================================
 @import "compass";
-// @import "susyone";
 
 // Import variables, abstractions, base styles and components using globbing.
 //
@@ -18,6 +17,6 @@
 // dependencies shouldn't be a problem.
 // =============================================================================
 @import "variables/**/*";
-@import "layouts/**/*";
+@import "layout/**/*";
 @import "base/**/*";
 @import "components/**/*";
