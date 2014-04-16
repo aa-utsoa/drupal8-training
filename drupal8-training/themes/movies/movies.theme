@@ -14,26 +14,3 @@ function movies_theme_suggestions_node_alter(array &$suggestions, array $variabl
     $suggestions[] = 'node__' . $node->bundle() . '_' . $variables['elements']['#view_mode'];
   }
 }
-
-/**
- * Override or insert variables into the page template.
- */
-function movies_preprocess_page(&$vars, $hook) {
-  $libraries = array(
-    '#attached' => array(
-      'library' => array(
-        'movies/movies-corescripts',
-      ),
-    ),
-  );
-  drupal_render($libraries);
-}
-
-/**
- * Implements template_preprocess_HOOK() for node.
- */
-// function movies_preprocess_node(&$variables) {
-//   if ($variables['view_mode'] == 'teaser') {
-//     $variables['comment_count'] = format_plural($variables['node']->get('field_movie_comment')->comment_count, '1 comment', '@count comments');
-//   }
-// }
