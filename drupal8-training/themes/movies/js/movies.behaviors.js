@@ -22,7 +22,7 @@
       //Once the time is up, this function is run to see if the user’s input is the same as the secret code
       function check_input() {
         if(input == secret) {
-          $("body").css({ background: "#cd0021" });
+          $("body").css({ background: "#363636 url('/themes/movies/images/site-bg-invert.jpg')" });
         }
       };
     }

@@ -32,8 +32,8 @@ function movies_preprocess_page(&$vars, $hook) {
 /**
  * Implements template_preprocess_HOOK() for node.
  */
-function movies_preprocess_node(&$variables) {
-  if ($variables['view_mode'] == 'teaser') {
-    $variables['comment_count'] = format_plural($variables['node']->get('field_movie_comment')->comment_count, '1 comment', '@count comments');
-  }
-}
+// function movies_preprocess_node(&$variables) {
+//   if ($variables['view_mode'] == 'teaser') {
+//     $variables['comment_count'] = format_plural($variables['node']->get('field_movie_comment')->comment_count, '1 comment', '@count comments');
+//   }
+// }
