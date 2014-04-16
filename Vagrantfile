@@ -27,12 +27,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe("common")
     chef.add_recipe("php::php54")
     chef.add_recipe("php::php-additions")
-    #chef.add_recipe("xhprof")
     chef.add_recipe("composer")
     chef.add_recipe("drush")
     chef.add_recipe("drush::deploy")
     chef.add_recipe("drupal::drupal-settings")
     chef.add_recipe("drupal::mysql-database")
-    chef.add_recipe("drupal::mysql-import")
   end
 end
