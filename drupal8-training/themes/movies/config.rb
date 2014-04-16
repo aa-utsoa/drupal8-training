@@ -27,7 +27,6 @@ require 'compass-normalize'
 # require 'toolkit'
 # require 'susy'
 require 'sass-globbing'
-# require 'sassy-buttons'
 require 'breakpoint'
 
 ##
