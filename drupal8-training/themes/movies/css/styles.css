@@ -8,9 +8,16 @@
 #site-header,
 #site-main,
 #site-footer {
-  max-width: 1120px;
+  max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 12.5%, rgba(102, 102, 255, 0.25) 12.5%, rgba(179, 179, 255, 0.25) 87.5%, rgba(0, 0, 0, 0) 87.5%);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 12.5%, rgba(102, 102, 255, 0.25) 12.5%, rgba(179, 179, 255, 0.25) 87.5%, rgba(0, 0, 0, 0) 87.5%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 12.5%, rgba(102, 102, 255, 0.25) 12.5%, rgba(179, 179, 255, 0.25) 87.5%, rgba(0, 0, 0, 0) 87.5%);
+  background-size: 7.14286%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top; }
   /* line 12, ../../../../../../.rvm/gems/ruby-2.0.0-p247@amazeelabs/gems/susy-2.1.1/sass/susy/output/support/_clearfix.scss */
   #site-header::after,
   #site-main::after,
@@ -19,7 +26,13 @@
     display: block;
     clear: both; }
 
-/* line 28, ../sass/layout/_grid.scss */
+/* line 31, ../sass/layout/_grid.scss */
+#page-wrapper {
+  padding: 0 20px;
+  max-width: 1160px;
+  margin: 0 auto; }
+
+/* line 37, ../sass/layout/_grid.scss */
 #site-main {
   background-color: #fff;
   -moz-border-radius: 10px;
@@ -27,11 +40,13 @@
   border-radius: 10px;
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.13); }
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+  margin-top: 55px; }
 
 /* line 2, ../sass/base/_backgrounds.scss */
 body {
-  background: #f1f1f1 url(../images/site-bg.jpg); }
+  background: #f1f1f1 url(../images/site-bg.jpg);
+  padding: 60px 0 0; }
 
 /* line 4, ../sass/base/_typography.scss */
 html {
@@ -41,3 +56,47 @@ html {
 body {
   font-size: 16px;
   font-size: 1.6rem; }
+
+/* line 14, ../sass/base/_typography.scss */
+a:link,
+a:visited {
+  text-decoration: none; }
+
+/* line 4, ../sass/components/_header.scss */
+.site-name {
+  background: #000;
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin: 0;
+  line-height: 24px;
+  line-height: 2.4rem; }
+  /* line 11, ../sass/components/_header.scss */
+  .site-name a {
+    background: #000;
+    color: #fff;
+    width: 26.78571%;
+    float: left;
+    margin-left: 0.89286%;
+    margin-right: 0.89286%; }
+
+/* line 4, ../sass/components/_movies.scss */
+.field-name-field-movie-rating {
+  float: left;
+  width: 100%; }
+
+/* line 8, ../sass/components/_movies.scss */
+.bright {
+  background: url(../images/star-bright.png);
+  float: left;
+  height: 19px;
+  width: 20px;
+  margin: 0 2px 0 0; }
+
+/* line 16, ../sass/components/_movies.scss */
+.view-mode-teaser.node-movie-review {
+  background-color: #f9f9f6;
+  width: 55.35714%;
+  float: left;
+  margin-left: 0.89286%;
+  margin-right: 0.89286%;
+  border: 1px solid black; }

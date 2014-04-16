@@ -1,0 +1,20 @@
+
+// Styling for the site title (regardless if it's an H1 or just a div)
+// =============================================================================
+.site-name {
+  background: #000;
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin: 0;
+  line-height: 24px;
+  line-height: 2.4rem;
+  a {
+    background: #000;
+    color: #fff;
+    @include span(4 of 14);
+  }
+}
+// .name-and-slogan {
+//   background: #000;
+//   @include span(4 of 14);
+// }
