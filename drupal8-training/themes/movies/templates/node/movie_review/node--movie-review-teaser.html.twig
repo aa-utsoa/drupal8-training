@@ -87,8 +87,8 @@
     {{ content.field_movie_rating }}
     {{ content.body }}
     <div class="bottom">
-      {{ comment_count }}
-      <a href="node/{{ node.id }}">{% trans %}Full Review{% endtrans %}</a>
+      {# <div class="comment-count"><a href="node/{{ node.id }}#add-comment">{{ comment_count }}</a></div> #}
+      <a href="node/{{ node.id }}" class="green-button">{% trans %}Full Review{% endtrans %}</a>
     </div>
   </div>
 

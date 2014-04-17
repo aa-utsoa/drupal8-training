@@ -29,13 +29,13 @@
  * @ingroup themeable
  */
 #}
-<div{{ attributes }}>
-  {% for i in 1..5 %}
-    {% if i <= items[0]['#markup'] %}
-      {% set color = "bright" %}
-    {% else %}
-      {% set color = "dark" %}
-    {% endif %}
-    <div class="star star-{{ i }} {{ color }}"></div>
-  {% endfor %}
+<div id="add-comment" {{ attributes }}>
+  {% if not label_hidden %}
+    <div class="field-label"{{ title_attributes }}>{{ label }}:&nbsp;</div>
+  {% endif %}
+  <div class="field-items"{{ content_attributes }}>
+    {% for delta, item in items %}
+      <div class="field-item"{{ item_attributes[delta] }}>{{ item }}</div>
+    {% endfor %}
+  </div>
 </div>

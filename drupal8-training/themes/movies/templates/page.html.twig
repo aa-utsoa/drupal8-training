@@ -123,26 +123,14 @@
 
       </div>{# /.l-content #}
 
-      {% if page.sidebar_first %}
-        <aside class="l-sidebar-first" role="complementary">
-          {{ page.sidebar_first }}
-        </aside>
-      {% endif %}
-
-      {% if page.sidebar_second %}
-        <aside class="l-sidebar-second" role="complementary">
-          {{ page.sidebar_second }}
+      {% if page.sidebar %}
+        <aside class="l-sidebar" role="complementary">
+          {{ page.sidebar }}
         </aside>
       {% endif %}
 
     </main>
 
   </div>{# /.l-container #}
-
-  {% if page.footer %}
-    <footer role="contentinfo" id="site-footer">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
 
 </div>{# /#page-wrapper #}
