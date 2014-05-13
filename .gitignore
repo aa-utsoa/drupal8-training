@@ -1,5 +1,5 @@
 .vagrant
 drupal/sites/default/settings.php
-drupal8-training/sites/default/files/*
+drupal/sites/default/files/*
+drupal/themes/movies/.sass-cache
 Gemfile.lock
-drupal8-training/themes/movies/.sass-cache

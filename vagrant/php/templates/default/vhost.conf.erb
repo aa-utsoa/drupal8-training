@@ -14,7 +14,7 @@ Listen 8080
 
 <VirtualHost *:8080>
   Servername <%= node[':hostname'] %>
-  DocumentRoot /home/vagrant/public_html/drupal8-training
+  DocumentRoot /home/vagrant/public_html/drupal
   CustomLog /var/log/apache2/<%= node[':hostname'] %>.access.log common
   ErrorLog /var/log/apache2/<%= node[':hostname'] %>.error.log
   php_value error_log /var/log/apache2/<%= node[':hostname'] %>.php.error.log

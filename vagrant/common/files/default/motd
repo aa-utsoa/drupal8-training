@@ -12,9 +12,9 @@ Welcome to the Amazee Labs Vagrant Box
 
 Your webdirectory is in
 
-/home/vagrant/public_html/drupal8-training
+/home/vagrant/public_html/drupal
 
-You can reach it by 'cd public_html/drupal8-training'
+You can reach it by 'cd public_html/drupal'
 
 Installed Commands:
 
