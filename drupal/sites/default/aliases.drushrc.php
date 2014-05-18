@@ -54,7 +54,7 @@ foreach ($amazeelabs_configuration['dev'] as $key => $value) {
       'no-ordered-dump' => TRUE
     ),
   ),
-  'root' => '/home/www-data/'. $site['siteurl'].'/drupal8-training',
+  'root' => '/home/www-data/'. $site['siteurl'].'/drupal',
   'uri' => 'http://'. $site['siteurl'].'.'. $value .'/',
       );
 }
