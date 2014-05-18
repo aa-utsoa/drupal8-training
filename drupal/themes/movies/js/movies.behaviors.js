@@ -7,7 +7,7 @@
   * */
   Drupal.behaviors.konamiCode = {
     attach: function (context, settings) {
-      var audio = new Audio("/drupal/themes/movies/audio/magicword.wav");
+      var audio = new Audio("themes/movies/audio/magicword.wav");
       audio.addEventListener('ended', function() {
         this.currentTime = 0;
         this.play();
