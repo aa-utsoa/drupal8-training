@@ -59,7 +59,11 @@
 }
 
 .l-content {
-  @include span(last 8 of 14);
-  @include post(1);
+  padding: 0 20px;
+  @include breakpoint($tablet-up) {
+    @include span(last 8 of 14);
+    @include post(1);
+    padding: 0;
+  }
   // border: 1px solid black;
 }

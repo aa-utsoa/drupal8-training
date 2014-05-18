@@ -17,6 +17,11 @@ $susy: (
   gutter-position: split,
 );
 
+// BREAKPOINT VARIABLES
+// =============================================================================
+$tablet-up: 481px;
+$desktop-up: 769px;
+
 // Apply our default grid ($susy) to the site
 // =============================================================================
 #site-header,

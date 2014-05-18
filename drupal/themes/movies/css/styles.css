@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 22, ../sass/layout/_grid.scss */
+/* line 27, ../sass/layout/_grid.scss */
 #site-header,
 #site-main,
 #site-footer {
@@ -19,13 +19,13 @@
     display: block;
     clear: both; }
 
-/* line 31, ../sass/layout/_grid.scss */
+/* line 36, ../sass/layout/_grid.scss */
 #page-wrapper {
   padding: 60px 20px 0;
   max-width: 1160px;
   margin: 0 auto; }
 
-/* line 37, ../sass/layout/_grid.scss */
+/* line 42, ../sass/layout/_grid.scss */
 #site-main {
   background-color: #fff;
   -moz-border-radius: 10px;
@@ -70,6 +70,7 @@ body {
     display: inline-block;
     float: right;
     background: #3ab681;
+    border: 0 none;
     color: #fff !important;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -84,13 +85,15 @@ body {
     padding: 10px 20px;
     position: relative;
     z-index: 1001; }
-    /* line 11, ../sass/variables/_mixins.scss */
+    /* line 12, ../sass/variables/_mixins.scss */
     .overlay-bg .close-btn:hover {
       background: #2bcd92; }
 
 /* line 2, ../sass/base/_forms.scss */
-.green-button {
+.green-button,
+.button {
   background: #3ab681;
+  border: 0 none;
   color: #fff !important;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -101,9 +104,20 @@ body {
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
-  /* line 11, ../sass/variables/_mixins.scss */
-  .green-button:hover {
+  /* line 12, ../sass/variables/_mixins.scss */
+  .green-button:hover,
+  .button:hover {
     background: #2bcd92; }
+
+/* line 7, ../sass/base/_forms.scss */
+input {
+  max-width: 100%; }
+
+/* line 11, ../sass/base/_forms.scss */
+input[type="text"],
+input[type="password"] {
+  border: 1px solid #cacaca;
+  padding: 10px; }
 
 /* line 4, ../sass/base/_typography.scss */
 html {
@@ -257,11 +271,16 @@ ul.inline {
 
 /* line 61, ../sass/components/_movies.scss */
 .l-content {
-  width: 55.35714%;
-  float: right;
-  margin-left: 0.89286%;
-  margin-right: 0.89286%;
-  margin-right: 8.03571%; }
+  padding: 0 20px; }
+  @media (min-width: 481px) {
+    /* line 61, ../sass/components/_movies.scss */
+    .l-content {
+      width: 55.35714%;
+      float: right;
+      margin-left: 0.89286%;
+      margin-right: 0.89286%;
+      margin-right: 8.03571%;
+      padding: 0; } }
 
 /* line 2, ../sass/components/_sidebar.scss */
 .l-sidebar {
