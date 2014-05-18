@@ -21,7 +21,11 @@
 .view-mode-teaser.node-movie-review {
   background-color: $beige;
   margin: 0 0 30px;
+  padding: 20px;
   position: relative;
+  @include breakpoint($desktop-up) {
+    padding: 0;
+  }
   .image {
     @include transition(all 0.4s ease-in-out);
     -webkit-backface-visibility: hidden;
@@ -51,11 +55,13 @@
     margin: 26px 0 10px;
   }
   .bottom {
-    bottom: 24px;
-    left: 0;
-    padding: 0 30px;
-    position: absolute;
-    width: 100%;
+    @include breakpoint($desktop-up) {
+      bottom: 24px;
+      left: 0;
+      padding: 0 30px;
+      position: absolute;
+      width: 100%;
+    }
   }
   .green-button {
     float: right;

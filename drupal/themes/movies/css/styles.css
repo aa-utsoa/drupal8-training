@@ -193,15 +193,18 @@ ul.inline {
   margin: 0;
   line-height: 30px;
   line-height: 3.0rem;
-  text-align: right;
   font-weight: normal; }
-  /* line 21, ../sass/components/_header.scss */
+  @media (min-width: 481px) {
+    /* line 12, ../sass/components/_header.scss */
+    .site-name {
+      text-align: right; } }
+  /* line 23, ../sass/components/_header.scss */
   .site-name a {
     background: #000;
     color: #fff;
     float: left;
     padding: 30px; }
-    /* line 26, ../sass/components/_header.scss */
+    /* line 28, ../sass/components/_header.scss */
     .site-name a:hover {
       color: #fff; }
 
@@ -230,8 +233,13 @@ ul.inline {
 .view-mode-teaser.node-movie-review {
   background-color: #f9f9f6;
   margin: 0 0 30px;
+  padding: 20px;
   position: relative; }
-  /* line 25, ../sass/components/_movies.scss */
+  @media (min-width: 769px) {
+    /* line 21, ../sass/components/_movies.scss */
+    .view-mode-teaser.node-movie-review {
+      padding: 0; } }
+  /* line 29, ../sass/components/_movies.scss */
   .view-mode-teaser.node-movie-review .image {
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -240,18 +248,18 @@ ul.inline {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1, 1); }
     @media (min-width: 769px) {
-      /* line 25, ../sass/components/_movies.scss */
+      /* line 29, ../sass/components/_movies.scss */
       .view-mode-teaser.node-movie-review .image {
         float: left; } }
-    /* line 32, ../sass/components/_movies.scss */
+    /* line 36, ../sass/components/_movies.scss */
     .view-mode-teaser.node-movie-review .image img {
       display: block; }
-    /* line 35, ../sass/components/_movies.scss */
+    /* line 39, ../sass/components/_movies.scss */
     .view-mode-teaser.node-movie-review .image:hover {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
       opacity: 0.85; }
   @media (min-width: 769px) {
-    /* line 39, ../sass/components/_movies.scss */
+    /* line 43, ../sass/components/_movies.scss */
     .view-mode-teaser.node-movie-review .content {
       bottom: 0;
       left: 180px;
@@ -259,26 +267,27 @@ ul.inline {
       position: absolute;
       right: 0;
       top: 0; } }
-  /* line 49, ../sass/components/_movies.scss */
+  /* line 53, ../sass/components/_movies.scss */
   .view-mode-teaser.node-movie-review h2 {
     text-transform: uppercase;
     margin: 26px 0 10px; }
-  /* line 53, ../sass/components/_movies.scss */
-  .view-mode-teaser.node-movie-review .bottom {
-    bottom: 24px;
-    left: 0;
-    padding: 0 30px;
-    position: absolute;
-    width: 100%; }
-  /* line 60, ../sass/components/_movies.scss */
+  @media (min-width: 769px) {
+    /* line 57, ../sass/components/_movies.scss */
+    .view-mode-teaser.node-movie-review .bottom {
+      bottom: 24px;
+      left: 0;
+      padding: 0 30px;
+      position: absolute;
+      width: 100%; } }
+  /* line 66, ../sass/components/_movies.scss */
   .view-mode-teaser.node-movie-review .green-button {
     float: right; }
 
-/* line 65, ../sass/components/_movies.scss */
+/* line 71, ../sass/components/_movies.scss */
 .l-content {
   padding: 0 20px; }
   @media (min-width: 769px) {
-    /* line 65, ../sass/components/_movies.scss */
+    /* line 71, ../sass/components/_movies.scss */
     .l-content {
       width: 55.35714%;
       float: right;
@@ -287,22 +296,20 @@ ul.inline {
       margin-right: 8.03571%;
       padding: 0; } }
 
-/* line 2, ../sass/components/_sidebar.scss */
-.l-sidebar {
-  padding-right: 30px; }
-  @media (min-width: 769px) {
-    /* line 2, ../sass/components/_sidebar.scss */
-    .l-sidebar {
-      width: 26.78571%;
-      float: left;
-      margin-left: 0.89286%;
-      margin-right: 0.89286%;
-      margin-left: 8.03571%; } }
-  /* line 8, ../sass/components/_sidebar.scss */
-  .l-sidebar .block {
-    background: #fcdd62;
-    padding: 30px;
-    margin-bottom: 30px; }
-    /* line 12, ../sass/components/_sidebar.scss */
-    .l-sidebar .block h2 {
-      margin-top: 0; }
+@media (min-width: 769px) {
+  /* line 2, ../sass/components/_sidebar.scss */
+  .l-sidebar {
+    width: 26.78571%;
+    float: left;
+    margin-left: 0.89286%;
+    margin-right: 0.89286%;
+    margin-left: 8.03571%;
+    padding-right: 30px; } }
+/* line 8, ../sass/components/_sidebar.scss */
+.l-sidebar .block {
+  background: #fcdd62;
+  padding: 30px;
+  margin-bottom: 30px; }
+  /* line 12, ../sass/components/_sidebar.scss */
+  .l-sidebar .block h2 {
+    margin-top: 0; }

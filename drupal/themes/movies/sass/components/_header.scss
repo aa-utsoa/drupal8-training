@@ -16,8 +16,10 @@
   margin: 0;
   line-height: 30px;
   line-height: 3.0rem;
-  text-align: right;
   font-weight: normal;
+  @include breakpoint($tablet-up) {
+    text-align: right;
+  }
   a {
     background: #000;
     color: #fff;

@@ -3,8 +3,8 @@
   @include breakpoint($desktop-up) {
     @include span(first 4 of 14);
     @include pre(1);
+    padding-right: 30px;
   }
-  padding-right: 30px;
   .block {
     background: $yellow;
     padding: 30px;
