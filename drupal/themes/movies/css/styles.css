@@ -174,17 +174,18 @@ ul.inline {
   ul.inline .comment-forbidden {
     padding: 0 0.5em 0 0; }
 
-/* line 4, ../sass/components/_header.scss */
-.name-and-slogan {
-  width: 26.78571%;
-  float: left;
-  margin-left: 0.89286%;
-  margin-right: 0.89286%;
-  margin-left: 8.03571%;
-  padding: 0 30px 0 0;
-  text-transform: uppercase; }
+@media (min-width: 481px) {
+  /* line 4, ../sass/components/_header.scss */
+  .name-and-slogan {
+    width: 26.78571%;
+    float: left;
+    margin-left: 0.89286%;
+    margin-right: 0.89286%;
+    margin-left: 8.03571%;
+    padding: 0 30px 0 0;
+    text-transform: uppercase; } }
 
-/* line 10, ../sass/components/_header.scss */
+/* line 12, ../sass/components/_header.scss */
 .site-name {
   background: #000;
   font-size: 24px;
@@ -194,13 +195,13 @@ ul.inline {
   line-height: 3.0rem;
   text-align: right;
   font-weight: normal; }
-  /* line 19, ../sass/components/_header.scss */
+  /* line 21, ../sass/components/_header.scss */
   .site-name a {
     background: #000;
     color: #fff;
     float: left;
     padding: 30px; }
-    /* line 24, ../sass/components/_header.scss */
+    /* line 26, ../sass/components/_header.scss */
     .site-name a:hover {
       color: #fff; }
 
@@ -232,48 +233,52 @@ ul.inline {
   position: relative; }
   /* line 25, ../sass/components/_movies.scss */
   .view-mode-teaser.node-movie-review .image {
-    float: left;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1, 1); }
-    /* line 30, ../sass/components/_movies.scss */
+    @media (min-width: 769px) {
+      /* line 25, ../sass/components/_movies.scss */
+      .view-mode-teaser.node-movie-review .image {
+        float: left; } }
+    /* line 32, ../sass/components/_movies.scss */
     .view-mode-teaser.node-movie-review .image img {
       display: block; }
-    /* line 33, ../sass/components/_movies.scss */
+    /* line 35, ../sass/components/_movies.scss */
     .view-mode-teaser.node-movie-review .image:hover {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
       opacity: 0.85; }
-  /* line 37, ../sass/components/_movies.scss */
-  .view-mode-teaser.node-movie-review .content {
-    bottom: 0;
-    left: 180px;
-    padding: 0 30px;
-    position: absolute;
-    right: 0;
-    top: 0; }
-  /* line 45, ../sass/components/_movies.scss */
+  @media (min-width: 769px) {
+    /* line 39, ../sass/components/_movies.scss */
+    .view-mode-teaser.node-movie-review .content {
+      bottom: 0;
+      left: 180px;
+      padding: 0 30px;
+      position: absolute;
+      right: 0;
+      top: 0; } }
+  /* line 49, ../sass/components/_movies.scss */
   .view-mode-teaser.node-movie-review h2 {
     text-transform: uppercase;
     margin: 26px 0 10px; }
-  /* line 49, ../sass/components/_movies.scss */
+  /* line 53, ../sass/components/_movies.scss */
   .view-mode-teaser.node-movie-review .bottom {
     bottom: 24px;
     left: 0;
     padding: 0 30px;
     position: absolute;
     width: 100%; }
-  /* line 56, ../sass/components/_movies.scss */
+  /* line 60, ../sass/components/_movies.scss */
   .view-mode-teaser.node-movie-review .green-button {
     float: right; }
 
-/* line 61, ../sass/components/_movies.scss */
+/* line 65, ../sass/components/_movies.scss */
 .l-content {
   padding: 0 20px; }
-  @media (min-width: 481px) {
-    /* line 61, ../sass/components/_movies.scss */
+  @media (min-width: 769px) {
+    /* line 65, ../sass/components/_movies.scss */
     .l-content {
       width: 55.35714%;
       float: right;
@@ -284,17 +289,20 @@ ul.inline {
 
 /* line 2, ../sass/components/_sidebar.scss */
 .l-sidebar {
-  width: 26.78571%;
-  float: left;
-  margin-left: 0.89286%;
-  margin-right: 0.89286%;
-  margin-left: 8.03571%;
   padding-right: 30px; }
-  /* line 7, ../sass/components/_sidebar.scss */
+  @media (min-width: 769px) {
+    /* line 2, ../sass/components/_sidebar.scss */
+    .l-sidebar {
+      width: 26.78571%;
+      float: left;
+      margin-left: 0.89286%;
+      margin-right: 0.89286%;
+      margin-left: 8.03571%; } }
+  /* line 8, ../sass/components/_sidebar.scss */
   .l-sidebar .block {
     background: #fcdd62;
     padding: 30px;
     margin-bottom: 30px; }
-    /* line 11, ../sass/components/_sidebar.scss */
+    /* line 12, ../sass/components/_sidebar.scss */
     .l-sidebar .block h2 {
       margin-top: 0; }

@@ -23,24 +23,28 @@
   margin: 0 0 30px;
   position: relative;
   .image {
-    float: left;
     @include transition(all 0.4s ease-in-out);
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    @include breakpoint($desktop-up) {
+      float: left;
+    }
     img {
       display: block;
     }
     &:hover {
-        @include opacity(0.85);
-      }
+      @include opacity(0.85);
+    }
   }
   .content {
-    bottom: 0;
-    left: 180px;
-    padding: 0 30px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    @include breakpoint($desktop-up) {
+      bottom: 0;
+      left: 180px;
+      padding: 0 30px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
   h2 {
     text-transform: uppercase;
@@ -60,10 +64,9 @@
 
 .l-content {
   padding: 0 20px;
-  @include breakpoint($tablet-up) {
+  @include breakpoint($desktop-up) {
     @include span(last 8 of 14);
     @include post(1);
     padding: 0;
   }
-  // border: 1px solid black;
 }
