@@ -28,12 +28,13 @@
       function check_input() {
         if(input == secret) {
           audio.play();
-          $('#password-fail').css({ display: "block" });
+          // $('.overlay-bg').css({ display: "block" });
+          $('.overlay-bg').fadeIn("slow");
         }
       };
       $('.close-btn').click(function() {
         audio.pause();
-        $('.overlay-bg').hide();
+        $('.overlay-bg').fadeOut("fast");
       })
     }
   };
