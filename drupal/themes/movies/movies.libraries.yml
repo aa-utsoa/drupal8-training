@@ -1,5 +1,5 @@
 movies-corescripts:
-  version: VERSION
+  version: 1.0
   js:
     js/movies.behaviors.js: {}
   dependencies:
