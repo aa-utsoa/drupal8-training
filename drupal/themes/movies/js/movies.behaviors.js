@@ -12,7 +12,8 @@
         this.currentTime = 0;
         this.play();
       }, false);
-      var secret = "777986736983"; // movies
+      // var secret = "777986736983"; // movies
+      var secret = "80798067798278";
       var input = "";
       var timer;
 
@@ -29,7 +30,8 @@
         if(input == secret) {
           audio.play();
           // $('.overlay-bg').css({ display: "block" });
-          $('.overlay-bg').fadeIn("slow");
+          // $('.overlay-bg').fadeIn("slow");
+          $('.overlay-bg').fadeIn("fast");
         }
       };
       $('.close-btn').click(function() {
