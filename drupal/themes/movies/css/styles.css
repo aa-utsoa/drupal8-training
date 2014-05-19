@@ -44,7 +44,12 @@ body {
 
 /* line 6, ../sass/base/_backgrounds.scss */
 .overlay-bg {
-  background: #fbfbfb;
+  background: url(../images/panic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center bottom;
+  min-height: 100%;
   display: none;
   height: 100%;
   left: 0;
@@ -52,19 +57,25 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000; }
-  /* line 15, ../sass/base/_backgrounds.scss */
+  /* line 20, ../sass/base/_backgrounds.scss */
   .overlay-bg .overlay-content {
-    height: 248px;
+    background: #fbfbfb;
+    border: 1px solid #000;
+    height: 300px;
     left: 50%;
-    margin: -143px 0 0 -160px;
+    margin: -150px 0 0 -300px;
     position: absolute;
     text-align: center;
     top: 50%;
-    width: 320px; }
-    /* line 23, ../sass/base/_backgrounds.scss */
+    width: 600px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+    /* line 31, ../sass/base/_backgrounds.scss */
     .overlay-bg .overlay-content img {
-      display: block; }
-  /* line 27, ../sass/base/_backgrounds.scss */
+      display: inline-block;
+      margin-top: 30px; }
+  /* line 36, ../sass/base/_backgrounds.scss */
   .overlay-bg .close-btn {
     cursor: pointer;
     display: inline-block;
@@ -81,10 +92,11 @@ body {
     -o-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    margin: -84px 0 0;
     padding: 10px 20px;
-    position: relative;
-    z-index: 1001; }
+    position: absolute;
+    z-index: 1001;
+    bottom: 20px;
+    right: 20px; }
     /* line 12, ../sass/variables/_mixins.scss */
     .overlay-bg .close-btn:hover {
       background: #2bcd92; }
